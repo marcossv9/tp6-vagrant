@@ -21,7 +21,7 @@ Estas instrucciones te llevarán a obtener una copia de este proyecto arriba y c
 Se necesita tener instalado lo siguiente para SO Ubuntu:
 
 - [Vagrant](https://www.vagrantup.com/downloads)
-- [VirtualBox] (https://www.virtualbox.org/wiki/Downloads)
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ### Instalación
 
