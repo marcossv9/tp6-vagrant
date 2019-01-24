@@ -7,10 +7,10 @@ Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y No
 Para poner en marcha el proyecto de forma rápida, ejecutar lols siguientes comandos:
 
 
-``
+```
 git clone https://github.com/marcossv9/tp6-vagrant.git
 vagrant up
-``
+```
 
 ## Empezando
 
@@ -36,25 +36,25 @@ Se pueden obtener las distintas boxes base desde [VagrantCloud](https://vagrantc
 
 Crear un directorio para nuestro proyecto y generar el archivo [Vagrantfile](https://github.com/marcossv9/tp6-vagrant/Vagranfile)
 
-``
+```
 cd /
 mkdir proyecto
 touch Vagrantfile
-``
+```
 
 Escribir dentro del archivo Vagrantfile con algn editor de texto, el contenido de [éste](https://github.com/marcossv9/tp6-vagrant/Vagranfile) archivo.
 
 Inicializar el archivo Vagrantfile
 
-``
+```
 vagrant init
-``
+```
 
 Inicializar VM
 
-``
+```
 vagrant up
-``
+```
 
 ## Autor
 
