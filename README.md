@@ -34,7 +34,7 @@ sudo apt-get install virtualbox
 
 Se pueden obtener las distintas boxes base desde [VagrantCloud](https://vagrantcloud.com/). Para este caso usaremos la de ubuntu/xenial64.
 
-Crear un directorio para nuestro proyecto y generar el archivo [Vagrantfile]
+Crear un directorio para nuestro proyecto y generar el archivo [Vagrantfile](https://github.com/marcossv9/tp6-vagrant/Vagranfile)
 
 ``
 cd /
