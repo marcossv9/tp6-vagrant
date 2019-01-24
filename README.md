@@ -54,6 +54,8 @@ touch Vagrantfile
 vagrant init
 ```
 
+### Ejecución
+
 - Inicializar VM
 
 ```
