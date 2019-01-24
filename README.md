@@ -32,7 +32,7 @@ sudo apt-get install vagrant
 sudo apt-get install virtualbox
 ```
 
-Se pueden obtener las distintas boxes base desde [VagrantCloud] (https://vagrantcloud.com/). Para este caso usaremos la de ubuntu/xenial64.
+Se pueden obtener las distintas boxes base desde [VagrantCloud](https://vagrantcloud.com/). Para este caso usaremos la de ubuntu/xenial64.
 
 Crear un directorio para nuestro proyecto y generar el archivo [Vagrantfile]
 
@@ -59,11 +59,3 @@ vagrant up
 ## Autor
 
 * **Marcos Silva** - *Pruebas* - [marcossv9](https://github.com/marcossv9)
-
-
-# Referencias
-
-
-## Licencia
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
