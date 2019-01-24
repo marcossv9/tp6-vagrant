@@ -6,8 +6,9 @@ Vagrant.configure("2") do |config| #Apertura archivo Vagrant
     ubuntu.vm.box = "ubuntu/xenial64"
     ubuntu.vm.network "private_network", ip: "172.16.0.10"
     ubuntu.vm.provision "shell", inline: <<-SHELL
-      sudo apt-get update -y
-      sudo apt-get install python3.6 -y
-    SHELL
+      sudo add-apt-repository ppa:deadsnakes/ppa
+      sudo apt update -y
+      sudo apt install python3.6 -y
+      SHELL
   end
 end
