@@ -31,7 +31,8 @@ Paso a paso de las instalaciones necesarias para correr Vagrant.
 sudo apt-get install vagrant
 sudo apt-get install virtualbox
 ```
-Se pueden obtener las distintas boxes base desde [VagrantCloud] (https://vagrantcloud.com/)
+
+Se pueden obtener las distintas boxes base desde [VagrantCloud] (https://vagrantcloud.com/). Para este caso usaremos la de ubuntu/xenial64.
 
 Crear un directorio para nuestro proyecto y generar el archivo [Vagrantfile]
 
@@ -40,9 +41,11 @@ cd /
 mkdir proyecto
 touch Vagrantfile
 ``
+
 Escribir dentro del archivo Vagrantfile con algn editor de texto, el contenido de [éste](https://github.com/marcossv9/tp6-vagrant/Vagranfile) archivo.
 
 Inicializar el archivo Vagrantfile
+
 ``
 vagrant init
 ``
