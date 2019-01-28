@@ -1,6 +1,6 @@
 # tp6-vagrant
 
-Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y NodeJS 7.10.1
+Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y NodeJS 10.15.0 preinstalado.
 
 ## Puesta en marcha rápida
 
@@ -46,9 +46,9 @@ mkdir proyecto
 touch Vagrantfile
 ```
 
-- Escribir dentro del archivo Vagrantfile con algn editor de texto, el contenido de [éste](https://github.com/marcossv9/tp6-vagrant/Vagranfile) archivo.
+- Escribir dentro del archivo Vagrantfile con algn editor de texto, el contenido de [éste](https://github.com/marcossv9/tp6-vagrant/blob/master/Vagrantfile) archivo.
 
-- Inicializar el archivo Vagrantfile
+- Inicializar el archivo Vagrantfile:
 
 ```
 vagrant init
@@ -64,4 +64,4 @@ vagrant up
 
 ## Autor
 
-* **Marcos Silva** - *Pruebas* - [marcossv9](https://github.com/marcossv9)
+* **Marcos Silva** - *Computer Systems Engineer* - [marcossv9](https://github.com/marcossv9)
