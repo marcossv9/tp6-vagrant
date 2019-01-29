@@ -1,0 +1,12 @@
+## Configurar VM Ubuntu
+
+Vagrant.configure("2") do |config| #apertura archivo Vagrant
+    config.vm.define "ubuntu" do |ubuntu| #definición VM para Ubuntu
+      ubuntu.vm.hostname = "ubuntuvm" #hostname VM
+      ubuntu.vm.box = "ubuntu/xenial64" #box de vagrantcloud a utilizar
+      ubuntu.vm.network "forwarded_port", guest: 3306, host: 53306 #exponiendo puerto 3306 de la VM
+      ubuntu.vm.provision "ansible_local" do |ansible| # Usar Ansible como un aprovisionador local
+        ansible.playbook = "playbook.yml" # Ruta al Ansible-playbook para instalar los componentes
+      end
+    end
+  end

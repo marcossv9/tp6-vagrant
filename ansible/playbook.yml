@@ -1,0 +1,23 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+    # Instalar pip
+    - easy_install-3.6: 
+        name: pip
+        state: latest
+    # Instalar MySQL
+   # - name: instalar MySQL
+    #  apt: 
+     #   name: docker-engine
+      #  state: present
+    # Iniciar Servicio de MySQL
+    #- name: iniciar MySQL
+     #service: 
+      #  name=docker 
+      #   state=restarted
+    # Instalar NodeJS
+    #- name: instalar NodeJS
+     # apt: 
+      #  name: 
+       # state: present
