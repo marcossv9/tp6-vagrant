@@ -4,7 +4,7 @@ Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y No
 
 ## Puesta en marcha rápida
 
-- Para poner en marcha el proyecto de forma rápida con Vagrant, ejecutar lols siguientes comandos:
+- Para poner en marcha el proyecto de forma rápida con Vagrant, ejecutar los siguientes comandos:
 
 
 ```
