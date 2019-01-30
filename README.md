@@ -4,11 +4,19 @@ Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y No
 
 ## Puesta en marcha rápida
 
-Para poner en marcha el proyecto de forma rápida, ejecutar lols siguientes comandos:
+- Para poner en marcha el proyecto de forma rápida con Vagrant, ejecutar lols siguientes comandos:
 
 
 ```
 git clone https://github.com/marcossv9/tp6-vagrant.git
+vagrant up
+```
+
+- Para poner en marcha el proyecto usando imagen base de Ubuntu con Vagrant y Ansible playbook, realizar lo siguiente:
+
+```
+git clone git clone https://github.com/marcossv9/tp6-vagrant.git
+cd ansible
 vagrant up
 ```
 
