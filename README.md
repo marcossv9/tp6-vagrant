@@ -15,7 +15,7 @@ vagrant up
 - Para poner en marcha el proyecto usando imagen base de Ubuntu con Vagrant y Ansible playbook, realizar lo siguiente:
 
 ```
-git clone git clone https://github.com/marcossv9/tp6-vagrant.git
+git clone https://github.com/marcossv9/tp6-vagrant.git
 cd ansible
 vagrant up
 ```
