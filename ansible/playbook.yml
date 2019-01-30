@@ -1,23 +1,35 @@
 ---
 - hosts: ubuntu
   become: true
+  gather_facts: no
   tasks:
-    # Instalar pip
-    - easy_install-3.6: 
-        name: pip
-        state: latest
-    # Instalar MySQL
-   # - name: instalar MySQL
-    #  apt: 
-     #   name: docker-engine
-      #  state: present
-    # Iniciar Servicio de MySQL
-    #- name: iniciar MySQL
-     #service: 
-      #  name=docker 
-      #   state=restarted
-    # Instalar NodeJS
-    #- name: instalar NodeJS
-     # apt: 
-      #  name: 
-       # state: present
+  # instalar python 3.6
+  - name: instalar python 3.6
+    raw : 'sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt-get update -y && sudo apt-get install python3.6 -y'
+  # setear password root BD MySQL
+  - name: MySQL | Set root password
+    command: debconf-set-selections <<< "mysql-server mysql-server/root_password password root"
+  - name: MySQL | Set root repassword
+    command: debconf-set-selections <<< "mysql-server mysql-server/root_password_again password root"
+  # instalar MySQL
+  - name: instalar MySQL
+    apt:
+      name: mysql-server
+      state: present
+  # iniciar Servicio de MySQL
+  - name: iniciar MySQL
+    service: 
+      name: mysql 
+      state: restarted
+      enabled: true
+    # instalar NodeJS
+  - name: add apt key for nodesource
+    apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+  - name: add repo for nodesource
+    apt_repository:
+      repo: 'deb https://deb.nodesource.com/node_10.x/ xenial main'
+      update_cache: yes
+  - name: install nodejs
+    apt: 
+      name: nodejs
+      state: present
