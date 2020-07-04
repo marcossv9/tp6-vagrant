@@ -1,4 +1,4 @@
-# tp6-vagrant
+# Vagrant-Ansible
 
 Creación de una VM con Vagrant sobre Ubuntu que contenga Python 3.6, mysql y NodeJS 10.15.0 preinstalado.
 
